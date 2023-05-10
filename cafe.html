@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kofi Mate</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+
+     <!-- box icons  -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body onload="initClock()">
+
+    <audio id="audio" loop autoplay>
+        <source src="audio2.mp3" type="audio/mpeg">
+        </audio>
+
+    <!-------------------------HEADER-------------------->
+    <header class="header">
+
+        <!--<div id="menu-btn" class="fas fa-bars"></div>-->
+
+        <button class="menu-btn">
+            <span class="menu-btn__line"></span>
+        </button>
+      
+
+        <a href="#home" class="logo"> Kofi Mate <i class='bx bx-coffee'></i> </a>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact Us</a>
+            
+        </nav>
+
+        <div class="datetime">
+            <div class="date">
+                <span id="dayname">Day</span>,
+                <span id="month">Month</span>
+                <span id="daynum">00</span>,
+                <span id="year">Year</span>
+
+            </div>
+
+            <div class="time">
+                <span id="hour">00</span>:
+                <span id="minutes">00</span>:
+                <span id="seconds">00</span>
+                <span id="period">AM</span>
+            </div>
+        </div>
+
+    </header>
+
+
+    <!-------------------------HOME-------------------->
+    <section class="home" id="home">
+
+        <video autoplay muted loop plays-inline id="video-background">
+            <source src="CAFE VID/video_Trim.mp4" type="video/mp4">
+        </video>
+
+        <h2 id="text"> KOFI MATE</h2>
+        <h6 id="h6text"> "Come for the coffee, stay for the conversation." </h6>
+        <img src="WAD CAFE/Mbean.png"id="Mbean">
+        <img src="WAD CAFE/left.png"id="left">
+        <img src="WAD CAFE/right.png"id="right">
+        <img src="WAD CAFE/Lbean.png"id="Lbean">
+        <img src="WAD CAFE/Rbean.png"id="Rbean">
+        
+
+    </section>
+
+    <!-------------------------ABOUT-------------------->
+    <section class="about" id="about">
+
+        <h1 class="heading"> WHY CHOOSE US</h1>    
+    
+        <div class="row">
+    
+            <div class="image">
+                <img src="CAFE MENU/Kofi mate beans.png" alt="">
+            </div>
+    
+            <div class="content">
+                <h3 class="title">What is kofi mate?</h3>
+                <p>Kofi Mate Cafe is a premium coffee shop that offers a unique and unforgettable experience to its customers. With a warm and cozy atmosphere, friendly staff, and delicious coffee blends, Kofi Mate Cafe is the perfect place to relax, catch up with friends, or get some work done. Their menu features a wide variety of coffee drinks, teas, and pastries, all made with high-quality ingredients and served with care. They also offer free Wi-Fi, comfortable seating, and a quiet ambiance, making it an ideal spot for studying or working remotely. Whether you're a coffee lover or just looking for a welcoming and inviting cafe to visit, Kofi Mate Cafe has everything you need and more.</p>
+               
+                <div class="icons-container">
+                    <div class="icons">
+                        <i class='bx bxs-coffee-bean'></i>
+                        <h3>quality coffee</h3>
+                    </div>
+                    <div class="icons">
+                        <i class='bx bxs-user-check'></i>
+                        <h3>quality services</h3>
+                    </div>
+                    <div class="icons">
+                        <i class='bx bxs-truck'></i>
+                        <h3>free delivery</h3>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    
+    </section>
+
+    <secion class="menu" id="menu">
+        <u><h1>MENU</h1></u>
+        <h2>Hot Coffee</h2>
+        <div class="menu">
+            <div class="card">
+                <div class="card-img">
+                    <img src="MENU/Brewed Coffee.jpg" alt="">
+                </div>
+                <div class="card-info">
+                    <p class="text-title">Brewed Coffee</p>
+                    <p class="text-body">
+                        Brewed coffee is made by pouring hot 
+                        water over coffee grounds and letting 
+                        it steep. It has a clean, simple taste 
+                        and is usually served black
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <span class="text-title">₱75</span>
+                </div>
+            </div>  
+            
+            <div class="card">
+                <div class="card-img">
+                    <img src="MENU/Pour Over.jpg" alt="">
+                </div>
+                <div class="card-info">
+                    <p class="text-title">Pour Over</p>
+                    <p class="text-body">
+                        Pour over coffee is made by slowly pouring 
+                        hot water over coffee grounds in a cone-shaped 
+                        filter. It produces a clean and bright cup of 
+                        coffee with subtle flavors. 
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <span class="text-title">₱125</span>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-img">
+                    <img src="MENU/French Press.png" alt="">
+                </div>
+                <div class="card-info">
+                    <p class="text-title">French Press</p>
+                    <p class="text-body">
+                        French press coffee is made by steeping coffee grounds 
+                        in hot water for several minutes and then pressing them 
+                        down with a plunger. It has a rich and full-bodied flavor.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <span class="text-title">₱150</span>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-img">
+                    <img src="MENU/Vietnamese Coffee.png" alt="">
+                </div>
+                <div class="card-info">
+                    <p class="text-title">Vietnamese Coffee</p>
+                    <p class="text-body">
+                        Vietnamese coffee is made by brewing coffee grounds 
+                        with a small metal filter, then mixing it with sweetened 
+                        condensed milk. It has a sweet and creamy taste.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <span class="text-title">₱150</span>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-img">
+                    <img src="MENU/Turkish Coffee.png" alt="">
+                </div>
+                <div class="card-info">
+                    <p class="text-title">Turkish Coffee</p>
+                    <p class="text-body">
+                        Turkish coffee is made by boiling finely ground 
+                        coffee beans with water and sugar in a cezve, a 
+                        small copper or brass pot. It has a strong and 
+                        intense flavor.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <span class="text-title">₱100</span>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-img">
+                    <img src="MENU/Affogato.png" alt="">
+                </div>
+                <div class="card-info">
+                    <p class="text-title">Affogato</p>
+                    <p class="text-body">
+                        Affogato is a shot of espresso poured over a 
+                        scoop of vanilla ice cream or gelato. It has 
+                        a rich and creamy taste with a strong coffee 
+                        flavor.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <span class="text-title">₱175</span>
+                </div>
+            </div>
+        </div>
+        
+
+        <h2>Iced Coffee</h2>  
+        <div class="menu">
+            <div class="card">
+                <div class="card-img">
+                    <img src="MENU/Iced Coffee.png" alt="">
+                </div>
+                <div class="card-info">
+                    <p class="text-title">Iced Coffee</p>
+                    <p class="text-body">
+                        Iced coffee is brewed coffee that is served 
+                        over ice. It has a clean, simple taste and 
+                        is usually served black. 
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <span class="text-title">₱90</span>
+                </div>
+            </div> 
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="MENU/Cold Brew.png" alt="">
+                </div>
+                <div class="card-info">
+                    <p class="text-title">Cold Brew</p>
+                    <p class="text-body">
+                        Cold brew coffee is made by steeping coffee 
+                        grounds in cold water for several hours. It 
+                        produces a smooth and less acidic cup of coffee.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <span class="text-title">₱150</span>
+                </div>
+            </div> 
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="MENU/Iced Latte.png" alt="">
+                </div>
+                <div class="card-info">
+                    <p class="text-title">Iced Latte</p>
+                    <p class="text-body">
+                        Iced latte is made by combining espresso with 
+                        cold milk and ice. It has a smooth and creamy 
+                        taste with a mild coffee flavor. 
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <span class="text-title">₱150</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="MENU/Iced Americano.png" alt="">
+                </div>
+                <div class="card-info">
+                    <p class="text-title">Iced Americano</p>
+                    <p class="text-body">
+                        Iced Americano is made by diluting a shot of 
+                        espresso with cold water and serving it over 
+                        ice. It has a strong and bitter taste with a 
+                        smoother finish.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <span class="text-title">₱100</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="MENU/Iced Mocha.png" alt="">
+                </div>
+                <div class="card-info">
+                    <p class="text-title">Iced Mocha</p>
+                    <p class="text-body">
+                        Iced mocha is made by combining espresso with 
+                        chocolate syrup or powder, cold milk, and ice. 
+                        It has a sweet and chocolaty taste and is often 
+                        topped with whipped cream. 
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <span class="text-title">₱170</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="MENU/Iced Caramel Macchiato.png" alt="">
+                </div>
+                <div class="card-info">
+                    <p class="text-title">Iced Caramel Macchiato </p>
+                    <p class="text-body">
+                        Iced caramel macchiato is made by combining 
+                        espresso with cold milk, caramel sauce, and 
+                        ice. It has a sweet and creamy taste with a 
+                        hint of caramel flavor. 
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <span class="text-title">₱185</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="MENU/Frappe.png" alt="">
+                </div>
+                <div class="card-info">
+                    <p class="text-title">Frappe</p>
+                    <p class="text-body">
+                        Frappe is made by blending coffee with ice, milk, 
+                        and sweetener to create a smooth and creamy texture.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <span class="text-title">₱160</span>
+                </div>
+            </div>
+        </div>
+
+        <h2>Pastry </h2>
+            <div class="menu">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="MENU/Croissant.png" alt="">
+                    </div>
+                    <div class="card-info">
+                        <p class="text-title">Croissant</p>
+                        <p class="text-body">
+                            A flaky, buttery pastry that originated 
+                            in France. It is often served plain or 
+                            with filling such as chocolate or almond. 
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="text-title">₱80</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">
+                        <img src="MENU/Muffin.png" alt="">
+                    </div>
+                    <div class="card-info">
+                        <p class="text-title">Muffin</p>
+                        <p class="text-body">
+                            A soft and moist quick bread that comes 
+                            in various flavors such as blueberry, 
+                            banana nut, or chocolate. 
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="text-title">₱95</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">
+                        <img src="MENU/cinnamon roll.png" alt="">
+                    </div>
+                    <div class="card-info">
+                        <p class="text-title">Cinnamon Roll</p>
+                        <p class="text-body">
+                            A sweet and gooey pastry made of rolled 
+                            dough with cinnamon and sugar filling, 
+                            topped with icing.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="text-title">₱100</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">
+                        <img src="MENU/Scone.png" alt="">
+                    </div>
+                    <div class="card-info">
+                        <p class="text-title">Scone</p>
+                        <p class="text-body">
+                            A crumbly and dense pastry that comes 
+                            in various flavors such as blueberry, 
+                            cranberry, or cheese.
+                        </p>
+                    </div>
+                    <div class="MENU/card-footer">
+                        <span class="text-title">₱95</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">
+                        <img src="MENU/Doughtnut.png" alt="">
+                    </div>
+                    <div class="card-info">
+                        <p class="text-title">Doughnut</p>
+                        <p class="text-body">
+                            A sweet fried dough pastry that comes 
+                            in various flavors such as chocolate, 
+                            glazed, or filled with jam or cream. 
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="text-title">₱75</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">
+                        <img src="MENU/Brownies.png" alt="">
+                    </div>
+                    <div class="card-info">
+                        <p class="text-title">Brownie</p>
+                        <p class="text-body">
+                            A dense and fudgy chocolate pastry that 
+                            comes in various flavors such as plain, 
+                            walnut, or caramel.                    
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="text-title">₱80</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">
+                        <img src="MENU/Danish.png" alt="">
+                    </div>
+                    <div class="card-info">
+                        <p class="text-title">Danish</p>
+                        <p class="text-body">
+                            A flaky and buttery pastry with various filling 
+                            options such as cheese, fruit, or chocolate.                 
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="text-title">₱95</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">
+                        <img src="MENU/Ensaymada.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <p class="text-title">Ensaymada</p>
+                        <p class="text-body">
+                            Ensaymada is a soft and buttery pastry that is 
+                            topped with grated cheese and sugar, and sometimes 
+                            filled with sweetened condensed milk or ube 
+                            (purple yam) jam.                  
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="text-title">₱50</span>
+                    </div>
+                </div>
+
+        </div>  
+    </secion>
+
+    <secion class="services" id="services">
+
+        <div class="services_header">
+            <h1>Our <span>Services</span>
+            </h1>
+            <p> Kofi Mate aims to create a welcoming and comfortable environment where customers can enjoy their coffee while engaging in meaningful conversations. Here are the services offered by our cafe:
+            </p>
+        </div>
+
+        <div class="services_one">
+            <img src="SERVICES/services1.jpg">
+            <div class="services_one_txt">
+                <div class="coffee_icon">----<i class="fa fa-coffee"></i>----</div>
+                <h1>Coffee and Beverage Menu:</h1>
+                <p>The cafe offers a wide variety of coffee and beverage options, including different types of coffee (espresso, cappuccino, latte, etc.), teas, hot chocolate, and other specialty drinks. We may also have a selection of pastries, snacks, and light bites to complement the beverages.
+                </p>
+            </div>
+        </div>
+        <div class="services_two">
+            <div class="services_two_txt">
+                <div class="coffee_icon">----<i class="fa fa-coffee"></i>----</div>
+                <h1>Takeaway and Delivery:
+                </h1>
+                <p>  Kofi Mate offers takeaway services, allowing customers to order the food and beverages to-go.
+                </p>
+            </div>
+            <img src="SERVICES/services3.jpg">
+        </div>
+    
+        <div class="services_one">
+            <img src="SERVICES/services6.jpg">
+            <div class="services_one_txt">
+            <div class="coffee_icon">----<i class="fa fa-coffee"></i>----</div>
+            <h1>Conversation-Friendly Layout:
+            </h1>
+            <p> The cafe's layout is designed to encourage conversation. It includes the arrangement of seating areas to facilitate group discussions and cozy corners for more intimate conversations.
+            </p>
+            </div>
+        </div>
+    
+        <div class="services_two">
+            <div class="services_two_txt">
+            <div class="coffee_icon">----<i class="fa fa-coffee"></i>----</div>
+            <h1>Free Wi-Fi:
+            </h1>
+            <p> Kofi Mate offers free Wi-Fi access, allowing customers to work, study, or browse the internet while enjoying their coffee. This feature are for those individuals who are looking for a cozy space to have meaningful conversations and work on personal projects.
+            </p>
+            </div>
+            <img src="SERVICES/services7.jpg">
+        </div>
+    </secion>
+
+    <section class="contact" id="contact">
+        <h2 class="heading"> <span>Contact</span> Us </h2>
+
+        <form action="mailto: kofimate@gmail.com">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+
+            <div class="input-box">
+                <input type="number" placeholder="Contact Number">
+                <input type="text" placeholder="Subject">
+            </div>
+           
+            <div class="input-message">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </div>
+
+            <footer class="footer">
+                <div class="footer-text">
+                    <p>Kofi Mate | All Rights Reserved</p>
+                    <a href="https://web.facebook.com/zuck/?_rdc=1&_rdr" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="instagram.com/jamba_art_onlinegallery/" target="_blank"><i class='bx bxl-instagram'></i></i></a>
+                    <a href="https://twitter.com KofiCafe" target="_blank"><i class='bx bxl-twitter'></i></a>
+                    <i class='bx bxl-linkedin-square'></i>
+                </div>
+    
+                <div class="footer-icontop">
+                    <a href="#home"><i class='bx bx-up-arrow'></i></a>
+                </div>
+            </footer>
+
+
+    
+<script>
+    function updateClock(){
+        var now = new Date();
+        var dname = now.getDay(),
+            mo = now.getMonth(),
+            dnum = now.getDate(),
+            yr = now.getFullYear(),
+            hou = now.getHours(),
+            min = now.getMinutes(),
+            sec = now.getSeconds(),
+            pe = "AM";
+
+        if(hou == 0){
+            hou = 12;
+        }
+        if(hou > 12) {
+            hou = hou - 12;
+            pe = "PM";
+        }
+        
+        Number.prototype.pad = function(digits){
+            for(var n = this.toString(); n.length < digits; n = 0 + n);
+            return n;
+        }
+
+        var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        var week = ["Sunday", "Monday" ,"Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        var ids = ["dayname", "month", "daynum", "year", "hour", "minutes", "seconds", "period"];
+        var values = [week[dname], months[mo], dnum.pad(2), yr, hou.pad(2), min.pad(2), sec.pad(2), pe];
+        
+        for(var i = 0; i < ids.length; i++){
+            document.getElementById(ids[i]).firstChild.nodeValue = values[i];
+        }
+    }
+
+    function initClock(){
+        updateClock();
+        window.setInterval("updateClock()", 1);
+    }
+
+
+
+</script>
+
+
+    <script src="script.js"></script>
+
+    
+
+  
+</body>
